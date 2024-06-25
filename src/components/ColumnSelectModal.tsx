@@ -3,12 +3,12 @@ import { columnHeaders } from "@/data";
 
 type Columns = { icon: string; label: string; checked: boolean };
 
-interface TableModalProps {
+interface ColumnSelectModalProps {
   columns: Columns[];
   setColumns: (columns: Columns[]) => void;
   setIsColumnModalOpened: (value: boolean) => void;
 }
-const TableModal: FC<TableModalProps> = ({
+const ColumnSelectModal: FC<ColumnSelectModalProps> = ({
   columns,
   setColumns,
   setIsColumnModalOpened,
@@ -102,4 +102,4 @@ const TableModal: FC<TableModalProps> = ({
   );
 };
 
-export default TableModal;
+export default ColumnSelectModal;

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { columnHeaders, tableData } from "@/data";
-import TableModal from "@/components/TableModal";
+import ColumnSelectModal from "@/components/ColumnSelectModal";
 import FilterModal from "@/components/FilterModal";
 import filterIcon from "../assets/images/icon/filter.png";
 import refreshIcon from "../assets/images/icon/refresh-ccw.png";
@@ -285,7 +285,7 @@ const Table = () => {
         </nav>
       </div>
       {isColumnModalOpened && (
-        <TableModal
+        <ColumnSelectModal
           columns={columns}
           setColumns={setColumns}
           setIsColumnModalOpened={setIsColumnModalOpened}
